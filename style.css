@@ -6,6 +6,10 @@
 }
 
 /* Base */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
   background: #ffffff;
@@ -21,6 +25,7 @@ header {
   border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 18px 60px;
   z-index: 1000;
 }
@@ -31,6 +36,10 @@ header {
 }
 
 /* Nav */
+nav {
+  display: flex;
+}
+
 nav a {
   margin-left: 24px;
   text-decoration: none;
@@ -40,6 +49,12 @@ nav a {
 
 nav a:hover {
   color: #000;
+}
+
+/* Active nav */
+.active-link {
+  color: #000;
+  font-weight: 600;
 }
 
 /* Hero */
@@ -89,17 +104,15 @@ ul {
 
 li {
   margin-bottom: 10px;
-  color: #333;
 }
 
-/* Experience blocks */
+/* Experience */
 .block {
   margin-bottom: 30px;
 }
 
 .block h3 {
   font-size: 18px;
-  margin-bottom: 8px;
 }
 
 /* Closing */
@@ -116,7 +129,17 @@ footer {
   font-size: 14px;
 }
 
-/* Mobile Styles */
+/* Highlight */
+.highlight {
+  background: rgba(0,0,0,0.05);
+  transition: background 0.5s ease;
+}
+
+/* Mobile */
+.menu-toggle {
+  display: none;
+}
+
 @media (max-width: 768px) {
 
   header {
@@ -152,16 +175,4 @@ footer {
   .hero h1 {
     font-size: 2rem;
   }
-}
-
-/* Active nav link */
-.active-link {
-  color: #000;
-  font-weight: 600;
-}
-
-/* Section highlight effect */
-.highlight {
-  background: rgba(0,0,0,0.04);
-  transition: background 0.6s ease;
 }
