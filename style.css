@@ -123,67 +123,33 @@ footer {
     padding: 16px 20px;
   }
 
-  /* Hide nav initially */
   nav {
     position: absolute;
     top: 60px;
-    right: 0;
-    background: white;
+    left: 0;
     width: 100%;
+    background: white;
     display: none;
     flex-direction: column;
     border-bottom: 1px solid #eee;
-  }
-
-  nav a {
-    margin: 15px 20px;
-    font-size: 16px;
   }
 
   nav.active {
     display: flex;
   }
 
-  /* Hamburger */
+  nav a {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+
   .menu-toggle {
     display: block;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
-  }
-
-  /* Hide desktop nav */
-  nav:not(.active) {
-    display: none;
-  }
-
-  /* Hero */
-  .hero {
-    padding: 100px 20px 60px;
   }
 
   .hero h1 {
     font-size: 2rem;
   }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  /* Sections */
-  section {
-    margin: 50px auto;
-  }
-
-  section h2 {
-    font-size: 1.1rem;
-  }
-
-  section p, li {
-    font-size: 15px;
-  }
-}
-
-/* Desktop hides hamburger */
-.menu-toggle {
-  display: none;
 }
